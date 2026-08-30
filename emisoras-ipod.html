@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>Emisoras</title>
+<style type="text/css">
+body {
+  margin: 0;
+  padding: 0 0 40px 0;
+  background: #0d0d0f;
+  color: #e8e8e8;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: none;
+}
+.head {
+  padding: 18px 16px 14px 16px;
+  border-bottom: 1px solid #2a2a2e;
+  background: #17171a;
+}
+.head h1 {
+  margin: 0;
+  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.head p {
+  margin: 4px 0 0 0;
+  font-size: 12px;
+  color: #8a8a92;
+}
+h2 {
+  margin: 0;
+  padding: 22px 16px 8px 16px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #6f8fb0;
+  font-weight: bold;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid #2a2a2e;
+}
+li {
+  border-bottom: 1px solid #2a2a2e;
+  background: #1b1b1f;
+}
+li a {
+  display: block;
+  padding: 13px 34px 13px 16px;
+  text-decoration: none;
+  color: #fff;
+}
+li a:active { background: #2f4f70; }
+.name {
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+}
+.desc {
+  display: block;
+  font-size: 12px;
+  color: #9a9aa2;
+  margin-top: 2px;
+}
+.url {
+  display: block;
+  font-family: Courier, monospace;
+  font-size: 11px;
+  color: #7f9fc4;
+  margin-top: 5px;
+  word-wrap: break-word;
+}
+.tag {
+  float: right;
+  margin-left: 8px;
+  font-family: Courier, monospace;
+  font-size: 10px;
+  color: #6a6a72;
+  border: 1px solid #3a3a40;
+  padding: 1px 4px;
+}
+.foot {
+  padding: 18px 16px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #7a7a82;
+}
+.foot code {
+  font-family: Courier, monospace;
+  color: #9fb8d0;
+}
+</style>
+</head>
+<body>
+
+<div class="head">
+  <h1>Emisoras</h1>
+  <p>Toca una para abrirla en el reproductor. Streams MP3 por HTTP.</p>
+</div>
+
+<h2>Rock cl&aacute;sico</h2>
+<ul>
+  <li><a href="http://ice.somafm.com/seventies">
+    <span class="tag">sin ads</span>
+    <span class="name">Left Coast 70s</span>
+    <span class="desc">Rock de &aacute;lbum de los setenta, en plan tranquilo. SomaFM.</span>
+    <span class="url">http://ice.somafm.com/seventies</span>
+  </a></li>
+  <li><a href="http://listen.181fm.com/181-eagle_128k.mp3">
+    <span class="tag">128k</span>
+    <span class="name">181.FM The Eagle</span>
+    <span class="desc">Cl&aacute;sicos de rock con formato de radio FM.</span>
+    <span class="url">http://listen.181fm.com/181-eagle_128k.mp3</span>
+  </a></li>
+</ul>
+
+<h2>Pop cl&aacute;sico</h2>
+<ul>
+  <li><a href="http://listen.181fm.com/181-greatoldies_128k.mp3">
+    <span class="tag">128k</span>
+    <span class="name">181.FM Great Oldies</span>
+    <span class="desc">&Eacute;xitos de los sesenta y setenta.</span>
+    <span class="url">http://listen.181fm.com/181-greatoldies_128k.mp3</span>
+  </a></li>
+  <li><a href="http://listen.181fm.com/181-awesome80s_128k.mp3">
+    <span class="tag">128k</span>
+    <span class="name">181.FM Awesome 80's</span>
+    <span class="desc">Pop y rock ochentero de radio comercial.</span>
+    <span class="url">http://listen.181fm.com/181-awesome80s_128k.mp3</span>
+  </a></li>
+  <li><a href="http://ice.somafm.com/u80s">
+    <span class="tag">sin ads</span>
+    <span class="name">Underground 80s</span>
+    <span class="desc">Synthpop y new wave brit&aacute;nico de los primeros ochenta. SomaFM.</span>
+    <span class="url">http://ice.somafm.com/u80s</span>
+  </a></li>
+  <li><a href="http://listen.181fm.com/181-mellowgold_128k.mp3">
+    <span class="tag">128k</span>
+    <span class="name">181.FM Mellow Gold</span>
+    <span class="desc">Baladas y soft rock de los setenta.</span>
+    <span class="url">http://listen.181fm.com/181-mellowgold_128k.mp3</span>
+  </a></li>
+</ul>
+
+<div class="foot">
+  <p>Para probar otros canales de 181.FM, cambia el nombre en
+  <code>http://listen.181fm.com/181-&lt;canal&gt;_128k.mp3</code>.</p>
+  <p>Todos los enlaces son HTTP plano a prop&oacute;sito: el Safari del iPod touch 2G
+  no negocia TLS con los servidores actuales.</p>
+</div>
+
+</body>
+</html>
